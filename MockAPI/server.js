@@ -66,7 +66,5 @@ router.put('/*',(req,res)=>{
 //router base route
 app.use('/', router);
 
-app.listen(process.env.PORT || 3000, '0.0.0.0', function () {
-    //...
-});
+app.listen(3000, () => console.log('Server running on port 3000'))
 console.log('Listening at http://localhost:' + port);
